@@ -1,0 +1,36 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method Joomla\\\\Database\\\\DatabaseInterface\\:\\:createQuery\\(\\)\\.$#"
+			count: 5
+			path: src/Handler/DatabaseHandler.php
+
+		-
+			message: "#^Property Joomla\\\\Session\\\\Handler\\\\DatabaseHandler\\:\\:\\$gcLifetime \\(int\\) does not accept null\\.$#"
+			count: 1
+			path: src/Handler/DatabaseHandler.php
+
+		-
+			message: "#^Property Joomla\\\\Session\\\\Storage\\\\NativeStorage\\:\\:\\$active is never read, only written\\.$#"
+			count: 1
+			path: src/Storage/NativeStorage.php
+
+		-
+			message: "#^Property Joomla\\\\Session\\\\Storage\\\\NativeStorage\\:\\:\\$closed is never read, only written\\.$#"
+			count: 1
+			path: src/Storage/NativeStorage.php
+
+		-
+			message: "#^Property Joomla\\\\Session\\\\Storage\\\\RuntimeStorage\\:\\:\\$active is never read, only written\\.$#"
+			count: 1
+			path: src/Storage/RuntimeStorage.php
+
+		-
+			message: "#^Property Joomla\\\\Session\\\\Storage\\\\RuntimeStorage\\:\\:\\$closed is never read, only written\\.$#"
+			count: 1
+			path: src/Storage/RuntimeStorage.php
+
+		-
+			message: "#^Property Joomla\\\\Session\\\\Validator\\\\AddressValidator\\:\\:\\$input is never read, only written\\.$#"
+			count: 1
+			path: src/Validator/AddressValidator.php
